@@ -84,5 +84,3 @@ def normalize(image):
 
 def sigmoid_normalize(image, a):
     return 255 * ((np.e ** (-1 * (a ** -1) * (image - 128)) + 1) ** -1)
-
-print(histogram_times('airplane_crashes.csv'))
